@@ -44,7 +44,7 @@ public class RomanNumberTransformerTest {
     }
 
     @Test
-    public void testName() {
+    public void shouldReturnRomanNumbers() {
 
         Integer i = 1515;
         String[] expected = transformer.parseArabicNumber(i);
