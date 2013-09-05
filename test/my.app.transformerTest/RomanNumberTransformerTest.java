@@ -52,4 +52,23 @@ public class RomanNumberTransformerTest {
         String actual=transformer.parsingToRoman(expected);
         assertEquals("MDXV",actual);
     }
+
+    @Test
+    public void testExamplesOne() {
+        Integer i = 1990;
+        String[] expected = transformer.parseArabicNumber(i);
+        expected=transformer.parseToExtensiveForm(expected);
+        String actual=transformer.parsingToRoman(expected);
+        assertEquals("MCMXC",actual);
+
+    }
+    @Test
+    public void testExamplesTwo() {
+        Integer i = 99;
+        String[] expected = transformer.parseArabicNumber(i);
+        expected=transformer.parseToExtensiveForm(expected);
+        String actual=transformer.parsingToRoman(expected);
+        assertEquals("XCIX",actual);
+
+    }
 }
