@@ -22,7 +22,6 @@ public class RomanNumberTransformer {
         this.romanNumberDivByFive.put("5000", "M");
         this.romanNumberDivByFive.put("5000", "M");
         this.romanNumberDivByFive.put("5000", "M");
-
     }
 
     public String[] parseArabicNumber(Integer number) {
